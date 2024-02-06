@@ -8,7 +8,10 @@ double convert(char *hex);
 
 int main(void)
 {
-    char *s = "123";
+    char s[10];
+    printf("Hexadecimal number: ");
+    scanf("%s", s);
+
     double result = convert(s);
     
     printf("%.0f", result);
